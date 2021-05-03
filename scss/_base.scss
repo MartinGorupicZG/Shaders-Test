@@ -1,0 +1,78 @@
+:root {
+	--white: #fff;
+	--smoke: #f8f8f8;
+	--grey: #101010;
+	--google: #d34836;
+	--linkedin: #007bb5;
+	--github: #32506d;
+	--blue: #002266;
+	--l-grey: #939393;
+	--gold: #665600;
+	--font-main: 'Montserrat', sans-serif;
+	--font-sec: 'Charm', cursive;
+	--black: #000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+
+	@media only screen and (max-width: 1007px) {
+		font-size: 57%;
+	}
+
+	@media only screen and (max-width: 830px) {
+		font-size: 50%;
+	}
+}
+
+body {
+	font-family: var(--font-main);
+	font-weight: 400;
+	line-height: 1.6;
+	overflow-y: scroll;
+	scrollbar-width: none;
+	/* Firefox */
+	-ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+	/* WebKit */
+	width: 0;
+	height: 0;
+}
+
+#container1 {
+	position: absolute;
+
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+}
+.text {
+	width: 100vw;
+	height: 25vh;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 0.4rem;
+}
+.text_intro {
+	font-size: 10rem;
+}
+.text_intro span {
+	display: inline-block;
+}
